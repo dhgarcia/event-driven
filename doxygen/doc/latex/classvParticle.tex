@@ -1,0 +1,98 @@
+\hypertarget{classvParticle}{}\section{v\+Particle Class Reference}
+\label{classvParticle}\index{v\+Particle@{v\+Particle}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries setid} (int id)\hypertarget{classvParticle_a64262c584495ed46940724b4f645db42}{}\label{classvParticle_a64262c584495ed46940724b4f645db42}
+
+\item 
+int {\bfseries getid} ()\hypertarget{classvParticle_a121f7c012ccbb6153eda5bee38ba310b}{}\label{classvParticle_a121f7c012ccbb6153eda5bee38ba310b}
+
+\item 
+void {\bfseries init\+State} (double x, double y, double r, double vx, double vy, double vr)\hypertarget{classvParticle_a1f1f4121c044427f6a40658305a590c1}{}\label{classvParticle_a1f1f4121c044427f6a40658305a590c1}
+
+\item 
+void {\bfseries init\+State} (double x, double y, double r, double tw)\hypertarget{classvParticle_a7a3db503f06737b1752081fbd6fc3a1e}{}\label{classvParticle_a7a3db503f06737b1752081fbd6fc3a1e}
+
+\item 
+void {\bfseries init\+Timing} (unsigned long int stamp)\hypertarget{classvParticle_a32a3db438862056c87414bfd7ee61522}{}\label{classvParticle_a32a3db438862056c87414bfd7ee61522}
+
+\item 
+void {\bfseries init\+Weight} (double weight)\hypertarget{classvParticle_af4c313f241bb13b00d592f7dae686fd9}{}\label{classvParticle_af4c313f241bb13b00d592f7dae686fd9}
+
+\item 
+unsigned int {\bfseries get\+Temporal\+Window} ()\hypertarget{classvParticle_a4bc5705c6b9f4c518318f3d7c4cb7ed6}{}\label{classvParticle_a4bc5705c6b9f4c518318f3d7c4cb7ed6}
+
+\item 
+void {\bfseries set\+Rate} (unsigned int rate)\hypertarget{classvParticle_a9d9e636c612d03cd68cd1f1e06179249}{}\label{classvParticle_a9d9e636c612d03cd68cd1f1e06179249}
+
+\item 
+void {\bfseries resample} (double w, unsigned long int t)\hypertarget{classvParticle_a007403ab415b51a555ae5c8ef2d57ddd}{}\label{classvParticle_a007403ab415b51a555ae5c8ef2d57ddd}
+
+\item 
+void {\bfseries resample} (const \hyperlink{classvParticle}{v\+Particle} \&seeder, double w, unsigned long int t)\hypertarget{classvParticle_a62003dd534e9caa94ec9944148f2f319}{}\label{classvParticle_a62003dd534e9caa94ec9944148f2f319}
+
+\item 
+bool {\bfseries predict} (unsigned long int stamp)\hypertarget{classvParticle_a100f92e97462a7044766c6533b195380}{}\label{classvParticle_a100f92e97462a7044766c6533b195380}
+
+\item 
+double {\bfseries calc\+Likelihood} (\hyperlink{classev_1_1vQueue}{ev\+::v\+Queue} \&events, int nparticles)\hypertarget{classvParticle_ad1370073f2b84f2650f3c0ed147bc906}{}\label{classvParticle_ad1370073f2b84f2650f3c0ed147bc906}
+
+\item 
+void {\bfseries init\+Likelihood} ()\hypertarget{classvParticle_aeb6f48a94882492e7959cab8cc670714}{}\label{classvParticle_aeb6f48a94882492e7959cab8cc670714}
+
+\item 
+void {\bfseries incremental\+Likelihood} (int vx, int vy, int dt)\hypertarget{classvParticle_a48eb9de4510ca5ad9eb27fcad770af95}{}\label{classvParticle_a48eb9de4510ca5ad9eb27fcad770af95}
+
+\item 
+void {\bfseries conclude\+Likelihood} ()\hypertarget{classvParticle_ae16c098e00f11d2858edef59fc323c53}{}\label{classvParticle_ae16c098e00f11d2858edef59fc323c53}
+
+\item 
+void {\bfseries update\+Weight} (double l, double n)\hypertarget{classvParticle_acac9cb115f7ee7a1200e3ef8c389f948}{}\label{classvParticle_acac9cb115f7ee7a1200e3ef8c389f948}
+
+\item 
+void {\bfseries update\+Weight2} (double likelihood, double pwsumsq)\hypertarget{classvParticle_abf7b613d453af4e82e58a7eddc373f43}{}\label{classvParticle_abf7b613d453af4e82e58a7eddc373f43}
+
+\item 
+void {\bfseries update\+Weight\+Sync} (double normval)\hypertarget{classvParticle_a71ac3f26d797818df2c671cb63ef5a60}{}\label{classvParticle_a71ac3f26d797818df2c671cb63ef5a60}
+
+\item 
+double {\bfseries getx} ()\hypertarget{classvParticle_a3d198bc0a1b1a475ab0b044bbff61488}{}\label{classvParticle_a3d198bc0a1b1a475ab0b044bbff61488}
+
+\item 
+double {\bfseries gety} ()\hypertarget{classvParticle_a40050ef035199b05e7cfd2601003d68a}{}\label{classvParticle_a40050ef035199b05e7cfd2601003d68a}
+
+\item 
+double {\bfseries getr} ()\hypertarget{classvParticle_ac78d2469a78798f791a5dab9f69b732e}{}\label{classvParticle_ac78d2469a78798f791a5dab9f69b732e}
+
+\item 
+double {\bfseries getw} ()\hypertarget{classvParticle_ac75939f4ac46ee086991fb629c583ada}{}\label{classvParticle_ac75939f4ac46ee086991fb629c583ada}
+
+\item 
+double {\bfseries getl} ()\hypertarget{classvParticle_a9b43157a0b2b278873c78806ccd75f6f}{}\label{classvParticle_a9b43157a0b2b278873c78806ccd75f6f}
+
+\item 
+double {\bfseries gettw} ()\hypertarget{classvParticle_a1760cb3cbd3014e6f5cf0a55e5d4dfff}{}\label{classvParticle_a1760cb3cbd3014e6f5cf0a55e5d4dfff}
+
+\item 
+unsigned long {\bfseries get\+Update\+Time} ()\hypertarget{classvParticle_aa866c2138932659daa4b4bf5fb066127}{}\label{classvParticle_aa866c2138932659daa4b4bf5fb066127}
+
+\item 
+unsigned long {\bfseries get\+Stamp} ()\hypertarget{classvParticle_af3b6763f2a1934d6f0cd470d3f1ea830}{}\label{classvParticle_af3b6763f2a1934d6f0cd470d3f1ea830}
+
+\item 
+bool {\bfseries needs\+Updating} (unsigned long int stamp)\hypertarget{classvParticle_a40088530921a6cdcc80f6ec56f6ff50f}{}\label{classvParticle_a40088530921a6cdcc80f6ec56f6ff50f}
+
+\item 
+bool {\bfseries operator$<$} (const \hyperlink{classvParticle}{v\+Particle} \&p) const \hypertarget{classvParticle_a5f1d15db973dbc077ed6f1b30a6fc9bf}{}\label{classvParticle_a5f1d15db973dbc077ed6f1b30a6fc9bf}
+
+\item 
+bool {\bfseries operator$>$} (const \hyperlink{classvParticle}{v\+Particle} \&p) const \hypertarget{classvParticle_ab62ea7572f30877c05f917c4f7c04416}{}\label{classvParticle_ab62ea7572f30877c05f917c4f7c04416}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/aglover/workspace/projects/event-\/driven/src/modules/v\+Particle\+Filter/include/v\+Particle\+Filter.\+h\item 
+/home/aglover/workspace/projects/event-\/driven/src/modules/v\+Particle\+Filter/src/v\+Particle\+Filter.\+cpp\end{DoxyCompactItemize}

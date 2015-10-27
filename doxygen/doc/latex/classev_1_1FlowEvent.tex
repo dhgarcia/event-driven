@@ -1,0 +1,77 @@
+\hypertarget{classev_1_1FlowEvent}{}\section{ev\+:\+:Flow\+Event Class Reference}
+\label{classev_1_1FlowEvent}\index{ev\+::\+Flow\+Event@{ev\+::\+Flow\+Event}}
+Inheritance diagram for ev\+:\+:Flow\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classev_1_1FlowEvent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string {\bfseries get\+Type} () const \hypertarget{classev_1_1FlowEvent_a686886dc3a21091cdc5349c5fb4f7903}{}\label{classev_1_1FlowEvent_a686886dc3a21091cdc5349c5fb4f7903}
+
+\item 
+float {\bfseries get\+Vx} () const \hypertarget{classev_1_1FlowEvent_ae95bd90698da178c65781fdc05e6f482}{}\label{classev_1_1FlowEvent_ae95bd90698da178c65781fdc05e6f482}
+
+\item 
+float {\bfseries get\+Vy} () const \hypertarget{classev_1_1FlowEvent_a663ceac71491c60565a0e169dd4dbefa}{}\label{classev_1_1FlowEvent_a663ceac71491c60565a0e169dd4dbefa}
+
+\item 
+int {\bfseries get\+Death} () const \hypertarget{classev_1_1FlowEvent_ac39faf9016620faaddccd6c15b9f513f}{}\label{classev_1_1FlowEvent_ac39faf9016620faaddccd6c15b9f513f}
+
+\item 
+void {\bfseries set\+Vx} (float vx)\hypertarget{classev_1_1FlowEvent_a0691c4ac5178ef8f517d3e16fe5b6830}{}\label{classev_1_1FlowEvent_a0691c4ac5178ef8f517d3e16fe5b6830}
+
+\item 
+void {\bfseries set\+Vy} (float vy)\hypertarget{classev_1_1FlowEvent_a783ed251482b9c064c98b4e4351b3de6}{}\label{classev_1_1FlowEvent_a783ed251482b9c064c98b4e4351b3de6}
+
+\item 
+void {\bfseries set\+Death} ()\hypertarget{classev_1_1FlowEvent_af4eb95dd9a4326790daceb7685464a89}{}\label{classev_1_1FlowEvent_af4eb95dd9a4326790daceb7685464a89}
+
+\item 
+{\bfseries Flow\+Event} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1FlowEvent_afad4e2f7346e329102b6df806a828e39}{}\label{classev_1_1FlowEvent_afad4e2f7346e329102b6df806a828e39}
+
+\item 
+\hyperlink{classev_1_1vEvent}{v\+Event} \& {\bfseries operator=} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1FlowEvent_a6f4cc54ead8eab3a04f021efa280d087}{}\label{classev_1_1FlowEvent_a6f4cc54ead8eab3a04f021efa280d087}
+
+\item 
+virtual \hyperlink{classev_1_1vEvent}{v\+Event} $\ast$ {\bfseries clone} ()\hypertarget{classev_1_1FlowEvent_a9a1c52800ba95d9392026c42b153ee24}{}\label{classev_1_1FlowEvent_a9a1c52800ba95d9392026c42b153ee24}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classev_1_1FlowEvent}{Flow\+Event} \&event)\hypertarget{classev_1_1FlowEvent_a85fb93e32e94718e5fb6a14bd85417e2}{}\label{classev_1_1FlowEvent_a85fb93e32e94718e5fb6a14bd85417e2}
+
+\item 
+bool {\bfseries operator==} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1FlowEvent_a29815a0c3a40e93c1b3087c29eb8b522}{}\label{classev_1_1FlowEvent_a29815a0c3a40e93c1b3087c29eb8b522}
+
+\item 
+virtual void {\bfseries encode} (yarp\+::os\+::\+Bottle \&b) const \hypertarget{classev_1_1FlowEvent_a13c900d7027a67d8197e32d56e92e0b0}{}\label{classev_1_1FlowEvent_a13c900d7027a67d8197e32d56e92e0b0}
+
+\item 
+yarp\+::os\+::\+Property {\bfseries get\+Content} () const \hypertarget{classev_1_1FlowEvent_a299486f89e1f893a513d237fd70ba00c}{}\label{classev_1_1FlowEvent_a299486f89e1f893a513d237fd70ba00c}
+
+\item 
+virtual bool {\bfseries decode} (const yarp\+::os\+::\+Bottle \&packet, int \&pos)\hypertarget{classev_1_1FlowEvent_a47a44a03752d3d0b5de668bfa8092d43}{}\label{classev_1_1FlowEvent_a47a44a03752d3d0b5de668bfa8092d43}
+
+\item 
+virtual int {\bfseries n\+Bytes\+Coded} () const \hypertarget{classev_1_1FlowEvent_a429953b6b4b849347295346a36950ce7}{}\label{classev_1_1FlowEvent_a429953b6b4b849347295346a36950ce7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries vx}\hypertarget{classev_1_1FlowEvent_a614490d12ab9767e546e2929a4c7a65e}{}\label{classev_1_1FlowEvent_a614490d12ab9767e546e2929a4c7a65e}
+
+\item 
+float {\bfseries vy}\hypertarget{classev_1_1FlowEvent_a20416e333c9f0258a2a1bbb49fb14989}{}\label{classev_1_1FlowEvent_a20416e333c9f0258a2a1bbb49fb14989}
+
+\item 
+int {\bfseries death}\hypertarget{classev_1_1FlowEvent_ae6b074315c90ad3e1fbc8a6d76cbdcbe}{}\label{classev_1_1FlowEvent_ae6b074315c90ad3e1fbc8a6d76cbdcbe}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/include/i\+Cub/eventdriven/v\+Codec.\+h\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/src/v\+Codec.\+cpp\end{DoxyCompactItemize}

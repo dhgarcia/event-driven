@@ -1,0 +1,71 @@
+\hypertarget{classev_1_1vEvent}{}\section{ev\+:\+:v\+Event Class Reference}
+\label{classev_1_1vEvent}\index{ev\+::v\+Event@{ev\+::v\+Event}}
+Inheritance diagram for ev\+:\+:v\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.618497cm]{classev_1_1vEvent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classev_1_1vEvent_a397825b956ef6d60cbedaa27414117bc}{v\+Event} ()\hypertarget{classev_1_1vEvent_a397825b956ef6d60cbedaa27414117bc}{}\label{classev_1_1vEvent_a397825b956ef6d60cbedaa27414117bc}
+
+\begin{DoxyCompactList}\small\item\em blank constructor required at base level \end{DoxyCompactList}\item 
+\hyperlink{classev_1_1vEvent_aaba2a98a5821fbad33523f558e9c565a}{v\+Event} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1vEvent_aaba2a98a5821fbad33523f558e9c565a}{}\label{classev_1_1vEvent_aaba2a98a5821fbad33523f558e9c565a}
+
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+virtual std\+::string {\bfseries get\+Type} () const \hypertarget{classev_1_1vEvent_a78ae84b6bc48e188a48803c0a63c7eec}{}\label{classev_1_1vEvent_a78ae84b6bc48e188a48803c0a63c7eec}
+
+\item 
+void {\bfseries set\+Stamp} (const unsigned int stamp)\hypertarget{classev_1_1vEvent_a23a27198e491e78b2dd90261d272c3a3}{}\label{classev_1_1vEvent_a23a27198e491e78b2dd90261d272c3a3}
+
+\item 
+int {\bfseries get\+Stamp} () const \hypertarget{classev_1_1vEvent_a8f24ece8c78e3b657228359643c9afbf}{}\label{classev_1_1vEvent_a8f24ece8c78e3b657228359643c9afbf}
+
+\item 
+virtual int {\bfseries get\+Channel} () const \hypertarget{classev_1_1vEvent_a195be4c62f8464a3bb8101d74ca3aabd}{}\label{classev_1_1vEvent_a195be4c62f8464a3bb8101d74ca3aabd}
+
+\item 
+virtual int {\bfseries get\+Polarity} () const \hypertarget{classev_1_1vEvent_a36d189c20a3fab42021de214a64ff5ee}{}\label{classev_1_1vEvent_a36d189c20a3fab42021de214a64ff5ee}
+
+\item 
+virtual \hyperlink{classev_1_1vEvent}{v\+Event} \& {\bfseries operator=} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1vEvent_a26f0b1283811c19e46ad859c00c651ce}{}\label{classev_1_1vEvent_a26f0b1283811c19e46ad859c00c651ce}
+
+\item 
+virtual bool {\bfseries operator==} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event)\hypertarget{classev_1_1vEvent_a294910360dc519411aad9c6162e2bece}{}\label{classev_1_1vEvent_a294910360dc519411aad9c6162e2bece}
+
+\item 
+virtual bool {\bfseries operator$<$} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event) const \hypertarget{classev_1_1vEvent_aed871fc1325a013061219459843d2b73}{}\label{classev_1_1vEvent_aed871fc1325a013061219459843d2b73}
+
+\item 
+virtual bool {\bfseries operator$>$} (const \hyperlink{classev_1_1vEvent}{v\+Event} \&event) const \hypertarget{classev_1_1vEvent_a5e6c2c5499df00db97c707c17dc00c67}{}\label{classev_1_1vEvent_a5e6c2c5499df00db97c707c17dc00c67}
+
+\item 
+virtual \hyperlink{classev_1_1vEvent}{v\+Event} $\ast$ {\bfseries clone} ()\hypertarget{classev_1_1vEvent_a1ec88aa748ba04cda2ff146067c77b7b}{}\label{classev_1_1vEvent_a1ec88aa748ba04cda2ff146067c77b7b}
+
+\item 
+virtual void {\bfseries encode} (yarp\+::os\+::\+Bottle \&b) const \hypertarget{classev_1_1vEvent_a66d9e4d833031c146cc0ac3af332b1cc}{}\label{classev_1_1vEvent_a66d9e4d833031c146cc0ac3af332b1cc}
+
+\item 
+virtual bool {\bfseries decode} (const yarp\+::os\+::\+Bottle \&packet, int \&pos)\hypertarget{classev_1_1vEvent_a75132601bf3f958212fd3793b7e53139}{}\label{classev_1_1vEvent_a75132601bf3f958212fd3793b7e53139}
+
+\item 
+virtual yarp\+::os\+::\+Property {\bfseries get\+Content} () const \hypertarget{classev_1_1vEvent_adabb906a71f96c89d6d539c899044622}{}\label{classev_1_1vEvent_adabb906a71f96c89d6d539c899044622}
+
+\item 
+virtual int {\bfseries n\+Bytes\+Coded} () const \hypertarget{classev_1_1vEvent_ad962c635597189c17957f3d73e64346d}{}\label{classev_1_1vEvent_ad962c635597189c17957f3d73e64346d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries stamp}\+:24\hypertarget{classev_1_1vEvent_ad4e003653fa59b37682addefce835490}{}\label{classev_1_1vEvent_ad4e003653fa59b37682addefce835490}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/include/i\+Cub/eventdriven/v\+Codec.\+h\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/src/v\+Codec.\+cpp\end{DoxyCompactItemize}

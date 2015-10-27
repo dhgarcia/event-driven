@@ -1,0 +1,136 @@
+\hypertarget{classev_1_1vSurface}{}\section{ev\+:\+:v\+Surface Class Reference}
+\label{classev_1_1vSurface}\index{ev\+::v\+Surface@{ev\+::v\+Surface}}
+
+
+The v\+Window class holds a list of events for a period of time as specified. Event expiry is checked each time new events are added and expired events are removed. At any point in time a copy of the current list of events can be requested.  
+
+
+
+
+{\ttfamily \#include $<$v\+Surface.\+h$>$}
+
+Inheritance diagram for ev\+:\+:v\+Surface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classev_1_1vSurface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classev_1_1vSurface_afb642ce656aee165c54a2238474599c0}{v\+Surface} (int \hyperlink{classev_1_1vSurface_a9666b7ae2580bf5647f65306f911825e}{width}=128, int \hyperlink{classev_1_1vSurface_ab3cf3df2f4fcb7eb5d89e0c5d1a5eeff}{height}=128)
+\begin{DoxyCompactList}\small\item\em v\+Window constructor \end{DoxyCompactList}\item 
+{\bfseries v\+Surface} (const \hyperlink{classev_1_1vSurface}{v\+Surface} \&)\hypertarget{classev_1_1vSurface_a592c1c79ff294f34e28503d7c7278b8f}{}\label{classev_1_1vSurface_a592c1c79ff294f34e28503d7c7278b8f}
+
+\item 
+\hyperlink{classev_1_1vSurface}{v\+Surface} {\bfseries operator=} (const \hyperlink{classev_1_1vSurface}{v\+Surface} \&)\hypertarget{classev_1_1vSurface_af779bb51b4c9f748a0cd38117cf5e1f9}{}\label{classev_1_1vSurface_af779bb51b4c9f748a0cd38117cf5e1f9}
+
+\item 
+event \hyperlink{classev_1_1vSurface_abb5a735613b4165a49a0da37f0770055}{add\+Event} (event$<$ \hyperlink{classev_1_1AddressEvent}{Address\+Event} $>$ v)
+\begin{DoxyCompactList}\small\item\em add\+Event adds an event to the window. Also checks for expired events. \end{DoxyCompactList}\item 
+event \hyperlink{classev_1_1vSurface_a4772b37a82726d86313438f5d89b2f62}{get\+Most\+Recent} ()
+\begin{DoxyCompactList}\small\item\em get\+Most\+Recent \end{DoxyCompactList}\item 
+int {\bfseries get\+Event\+Count} ()\hypertarget{classev_1_1vSurface_aa90e7d977149ee42dff7a2735b367a2b}{}\label{classev_1_1vSurface_aa90e7d977149ee42dff7a2735b367a2b}
+
+\item 
+void {\bfseries clear} ()\hypertarget{classev_1_1vSurface_a222eadfa9d900d22148d1ffb0bb68661}{}\label{classev_1_1vSurface_a222eadfa9d900d22148d1ffb0bb68661}
+
+\item 
+const \hyperlink{classev_1_1vQueue}{v\+Queue} \& {\bfseries get\+Surf} (int d)\hypertarget{classev_1_1vSurface_a16704556a7d824ab59b6250caa4d3c0b}{}\label{classev_1_1vSurface_a16704556a7d824ab59b6250caa4d3c0b}
+
+\item 
+const \hyperlink{classev_1_1vQueue}{v\+Queue} \& {\bfseries get\+Surf} (int x, int y, int d)\hypertarget{classev_1_1vSurface_aef72b92ba02f7e6a3e804a995cdf7894}{}\label{classev_1_1vSurface_aef72b92ba02f7e6a3e804a995cdf7894}
+
+\item 
+virtual const \hyperlink{classev_1_1vQueue}{v\+Queue} \& {\bfseries get\+Surf} (int xl, int xh, int yl, int yh)\hypertarget{classev_1_1vSurface_ad0364e9a0811fbbe46784c993b5fef31}{}\label{classev_1_1vSurface_ad0364e9a0811fbbe46784c993b5fef31}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ event$<$$>$ $>$ $>$ \hyperlink{classev_1_1vSurface_ae75428cabd7e9eabc544d4ef7290e9e7}{spatial}\hypertarget{classev_1_1vSurface_ae75428cabd7e9eabc544d4ef7290e9e7}{}\label{classev_1_1vSurface_ae75428cabd7e9eabc544d4ef7290e9e7}
+
+\begin{DoxyCompactList}\small\item\em for quick spatial accessing and surfacing \end{DoxyCompactList}\item 
+int \hyperlink{classev_1_1vSurface_a9666b7ae2580bf5647f65306f911825e}{width}\hypertarget{classev_1_1vSurface_a9666b7ae2580bf5647f65306f911825e}{}\label{classev_1_1vSurface_a9666b7ae2580bf5647f65306f911825e}
+
+\begin{DoxyCompactList}\small\item\em the sensor width \end{DoxyCompactList}\item 
+int \hyperlink{classev_1_1vSurface_ab3cf3df2f4fcb7eb5d89e0c5d1a5eeff}{height}\hypertarget{classev_1_1vSurface_ab3cf3df2f4fcb7eb5d89e0c5d1a5eeff}{}\label{classev_1_1vSurface_ab3cf3df2f4fcb7eb5d89e0c5d1a5eeff}
+
+\begin{DoxyCompactList}\small\item\em the sensor height \end{DoxyCompactList}\item 
+event$<$ \hyperlink{classev_1_1AddressEvent}{ev\+::\+Address\+Event} $>$ {\bfseries most\+Recent}\hypertarget{classev_1_1vSurface_aaef125f5536a04adeeae2865bd30a888}{}\label{classev_1_1vSurface_aaef125f5536a04adeeae2865bd30a888}
+
+\item 
+event {\bfseries just\+Removed}\hypertarget{classev_1_1vSurface_af6a615e0dc468eea2f9803b260610fcf}{}\label{classev_1_1vSurface_af6a615e0dc468eea2f9803b260610fcf}
+
+\item 
+yarp\+::os\+::\+Semaphore \hyperlink{classev_1_1vSurface_a34a27a6f5757660da2410b0d6cacbf6d}{mutex}\hypertarget{classev_1_1vSurface_a34a27a6f5757660da2410b0d6cacbf6d}{}\label{classev_1_1vSurface_a34a27a6f5757660da2410b0d6cacbf6d}
+
+\begin{DoxyCompactList}\small\item\em for safe copying of q in the multi-\/threaded environment \end{DoxyCompactList}\item 
+\hyperlink{classev_1_1vQueue}{v\+Queue} \hyperlink{classev_1_1vSurface_a2f60e3e7abe9244e9c57352985afbae3}{subq}\hypertarget{classev_1_1vSurface_a2f60e3e7abe9244e9c57352985afbae3}{}\label{classev_1_1vSurface_a2f60e3e7abe9244e9c57352985afbae3}
+
+\begin{DoxyCompactList}\small\item\em member variable for quick memory allocation \end{DoxyCompactList}\item 
+int {\bfseries event\+Count}\hypertarget{classev_1_1vSurface_a2b6a8d84a626b8dce15597807da598fb}{}\label{classev_1_1vSurface_a2b6a8d84a626b8dce15597807da598fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The v\+Window class holds a list of events for a period of time as specified. Event expiry is checked each time new events are added and expired events are removed. At any point in time a copy of the current list of events can be requested. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ev\+::v\+Surface@{ev\+::v\+Surface}!v\+Surface@{v\+Surface}}
+\index{v\+Surface@{v\+Surface}!ev\+::v\+Surface@{ev\+::v\+Surface}}
+\subsubsection[{\texorpdfstring{v\+Surface(int width=128, int height=128)}{vSurface(int width=128, int height=128)}}]{\setlength{\rightskip}{0pt plus 5cm}ev\+::v\+Surface\+::v\+Surface (
+\begin{DoxyParamCaption}
+\item[{int}]{width = {\ttfamily 128}, }
+\item[{int}]{height = {\ttfamily 128}}
+\end{DoxyParamCaption}
+)}\hypertarget{classev_1_1vSurface_afb642ce656aee165c54a2238474599c0}{}\label{classev_1_1vSurface_afb642ce656aee165c54a2238474599c0}
+
+
+v\+Window constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Size} & optional time to store events (in us) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ev\+::v\+Surface@{ev\+::v\+Surface}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!ev\+::v\+Surface@{ev\+::v\+Surface}}
+\subsubsection[{\texorpdfstring{add\+Event(event$<$ Address\+Event $>$ v)}{addEvent(event< AddressEvent > v)}}]{\setlength{\rightskip}{0pt plus 5cm}event ev\+::v\+Surface\+::add\+Event (
+\begin{DoxyParamCaption}
+\item[{event$<$ {\bf Address\+Event} $>$}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classev_1_1vSurface_abb5a735613b4165a49a0da37f0770055}{}\label{classev_1_1vSurface_abb5a735613b4165a49a0da37f0770055}
+
+
+add\+Event adds an event to the window. Also checks for expired events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event to add \\
+\hline
+\end{DoxyParams}
+\index{ev\+::v\+Surface@{ev\+::v\+Surface}!get\+Most\+Recent@{get\+Most\+Recent}}
+\index{get\+Most\+Recent@{get\+Most\+Recent}!ev\+::v\+Surface@{ev\+::v\+Surface}}
+\subsubsection[{\texorpdfstring{get\+Most\+Recent()}{getMostRecent()}}]{\setlength{\rightskip}{0pt plus 5cm}event ev\+::v\+Surface\+::get\+Most\+Recent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classev_1_1vSurface_a4772b37a82726d86313438f5d89b2f62}{}\label{classev_1_1vSurface_a4772b37a82726d86313438f5d89b2f62}
+
+
+get\+Most\+Recent 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/include/i\+Cub/eventdriven/v\+Surface.\+h\item 
+/home/aglover/workspace/projects/event-\/driven/libraries/src/v\+Surface.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{device2yarp_8h}{}\section{/home/aglover/workspace/projects/event-\/driven/src/hardwareio/aex\+Grabber/include/device2yarp.h File Reference}
+\label{device2yarp_8h}\index{/home/aglover/workspace/projects/event-\/driven/src/hardwareio/aex\+Grabber/include/device2yarp.\+h@{/home/aglover/workspace/projects/event-\/driven/src/hardwareio/aex\+Grabber/include/device2yarp.\+h}}
+
+
+Definition of the ratethread that receives events from D\+VS camera.  
+
+
+{\ttfamily \#include $<$yarp/os/\+Rate\+Thread.\+h$>$}\\*
+{\ttfamily \#include $<$yarp/os/\+Buffered\+Port.\+h$>$}\\*
+{\ttfamily \#include $<$yarp/os/\+Semaphore.\+h$>$}\\*
+{\ttfamily \#include $<$yarp/os/\+Bottle.\+h$>$}\\*
+{\ttfamily \#include $<$yarp/os/\+Time.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$i\+Cub/eventdriven/all.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structaer}{aer}
+\item 
+struct \hyperlink{structatom}{atom}
+\item 
+class \hyperlink{classdevice2yarp}{device2yarp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+S\+T\+D\+C\+\_\+\+L\+I\+M\+I\+T\+\_\+\+M\+A\+C\+R\+OS}\hypertarget{device2yarp_8h_aeb7e7a856ab7a794b05b6b63ef36ea3e}{}\label{device2yarp_8h_aeb7e7a856ab7a794b05b6b63ef36ea3e}
+
+\item 
+\#define {\bfseries u8}~uint8\+\_\+t\hypertarget{device2yarp_8h_af3b86d961da0a3575b4f99c9ffaf01fd}{}\label{device2yarp_8h_af3b86d961da0a3575b4f99c9ffaf01fd}
+
+\item 
+\#define {\bfseries u16}~uint16\+\_\+t\hypertarget{device2yarp_8h_a2b19d553290a8d4a083d3c03280ea800}{}\label{device2yarp_8h_a2b19d553290a8d4a083d3c03280ea800}
+
+\item 
+\#define {\bfseries u32}~uint32\+\_\+t\hypertarget{device2yarp_8h_a332ccd83dfe2973e6cb2b61e4f3ab7e6}{}\label{device2yarp_8h_a332ccd83dfe2973e6cb2b61e4f3ab7e6}
+
+\item 
+\#define {\bfseries u64}~uint64\+\_\+t\hypertarget{device2yarp_8h_a969c7c1ebb4f70581e040a3034b14ee0}{}\label{device2yarp_8h_a969c7c1ebb4f70581e040a3034b14ee0}
+
+\item 
+\#define {\bfseries S\+I\+Z\+E\+\_\+\+O\+F\+\_\+\+E\+V\+E\+NT}~8192\hypertarget{device2yarp_8h_ad49b36abd5473a87913e4964cc1564c9}{}\label{device2yarp_8h_ad49b36abd5473a87913e4964cc1564c9}
+
+\item 
+\#define {\bfseries S\+I\+Z\+E\+\_\+\+O\+F\+\_\+\+D\+A\+TA}~65536\hypertarget{device2yarp_8h_a458727ba44329288f712b89a0b52199a}{}\label{device2yarp_8h_a458727ba44329288f712b89a0b52199a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition of the ratethread that receives events from D\+VS camera. 
+
